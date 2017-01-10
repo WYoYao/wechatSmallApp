@@ -1,0 +1,137 @@
+text{
+  font-family: "microsoft yahei",arial
+}
+
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.content{
+  padding: 0 20rpx;
+}
+
+/** 目的地样式 */
+.address{
+  height: 104rpx;
+  border-bottom: 2rpx solid #e1e1e1;
+}
+
+.addresss_key{
+  float: left;
+  line-height: 104rpx;
+  font-size: 26rpx;
+  color: #666;
+  width: 126rpx;
+}
+
+.addresss_value{
+  float: left;
+  line-height: 104rpx;
+  font-size: 40rpx;
+  color: #666;
+}
+.addresss_value text{
+  font-size: 36rpx;
+  color: #333;
+}
+
+.clear{
+  clear: both;
+}
+
+/**日期样式*/
+.date{
+  height: 162rpx;
+  border-bottom: 2rpx solid #e1e1e1;
+}
+
+.date_message{
+  float: left;
+  padding: 20rpx 0;
+  line-height: 60rpx;
+}
+
+
+.date_total{
+  float: right;
+  margin-right: 20rpx;
+  color: #b6b6b6;
+  font-size:26rpx;
+  line-height: 162rpx;
+}
+
+.date_text{
+  height:60rpx;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 60rpx;
+  display:inline-block;
+  float: left;
+}
+
+.date_value{
+  height:60rpx;
+  color: #333;
+  font-size: 40rpx;
+  line-height: 54rpx;
+  display:inline-block;
+  float: left;
+  margin-left:70rpx;
+}
+
+.date_now{
+  height:60rpx;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 60rpx;
+  display:inline-block;
+  float: left;
+  margin-left:20rpx;
+}
+
+.keyword{
+  height:104rpx;
+  border-bottom: 2rpx solid #e1e1e1;
+}
+
+.star{
+  height:104rpx;
+  border-bottom: 2rpx solid #e1e1e1;
+}
+
+.font_small{
+  line-height: 104rpx;
+  font-size: 26rpx;
+  color: #666;
+  width: 126rpx;
+}
+
+.button{
+  margin-top:80rpx;
+}
+
+#search{
+  background-color:"#ff8522";
+}
+
+
+
