@@ -44,6 +44,7 @@ text{
 }
 
 .addresss_value{
+  width: 580rpx;
   float: left;
   line-height: 104rpx;
   font-size: 40rpx;

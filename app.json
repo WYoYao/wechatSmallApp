@@ -3,6 +3,7 @@
     "pages/hotel/index/index",
     "pages/hotel/list/index",
     "pages/hotel/logs/logs",
+    "pages/hotel/citylist/index",
     "pages/member/index/index",
     "pages/viphall/index/index"
   ],

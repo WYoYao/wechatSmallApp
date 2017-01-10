@@ -1,11 +1,27 @@
 //index.js
 //获取应用实例
+let {to}=require("../../../utils/navigate.js");
+// let navigate=require("../../../utils/navigate.js");
 var app = getApp();
+// console.log(navigate);
 
+console.log(app);
 
 Page({
   data: {
-    text: "This is page data."
+    text: "This is page data.",
+    num:0
+  },
+  handle_submit:function(event){
+      let {num}=this.data;
+      this.setData({
+        num:++num
+      });
+
+      console.log(this.data);
+  },
+  handle_city_list: function(event) {
+    to("../citylist/index",this.data);
   },
   onLoad: function(options) {
     // Do some initialize when page load.
