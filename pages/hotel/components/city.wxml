@@ -1,5 +1,0 @@
-<!--index.wxml-->
-<!--index.wxml-->
-<template name="city">
-<text>Hello City</text>
-</template>
