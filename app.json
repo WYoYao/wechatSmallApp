@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/hotel/index/index",
+    "components/picker/picker",
+    "pages/hotel/hotelList/index",
+    "pages/hotel/citylist/index",
+    "pages/hotel/logs/logs",
+    "pages/member/index/index",
+    "pages/viphall/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#019FF0",
+    "navigationBarTitleText": "金色世纪",
+    "navigationBarTextStyle":"white",
+    "backgroundColor":"#ffffff"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

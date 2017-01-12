@@ -1,0 +1,63 @@
+
+<!--<import src="../components/city.wxml"/>-->
+<!--<include src="city.wxml"/>-->
+
+<!--<template is="city"/>-->
+<!--<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>-->
+<!--<view class="group">-->
+<view class="content">
+  <view class="address">
+    <view class="addresss_key">
+      <text>目的地</text>
+    </view>
+    <view class="addresss_value" bindtap="handle_city_list">
+      <text>北京</text>
+    </view>
+  </view>
+  <view class="date clear">
+    <view class="date_message">
+      <view>
+        <text class="date_text">入住</text>
+        <picker mode="date" value="{{state.StartDate}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <text class="date_value">{{StartDate.Month}}月{{StartDate.Day}}日</text>
+        </picker>
+        <text class="date_now">今天</text>
+      </view>
+      <view>
+        <text class="date_text">离店</text>
+        <text class="date_value">{{EndtDate.Month}}月{{EndtDate.Day}}日</text>
+        <text class="date_now">明天</text>
+      </view>
+    </view>
+    <view class="date_total">
+      <text>共1晚</text>
+    </view>
+  </view>
+  <view class="keyword">
+    <view class="addresss_key">
+      <text>关键字</text>
+    </view>
+    <view class="addresss_value">
+      <text>不限</text>
+    </view>
+  </view>
+  <view class="star">
+    <view class="addresss_key">
+      <text>星级价格</text>
+    </view>
+    <view class="addresss_value">
+      <text>不限</text>
+    </view>
+  </view>
+  <view class="button">
+    <button type="default" style="background-color: #ff8522;color: #fff;" id="search" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="handle_submit" hover-class="other-button-hover"> 查询 </button>
+  </view>
+</view>

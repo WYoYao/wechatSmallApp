@@ -1,0 +1,109 @@
+<!--seach start-->
+<view class="seach">
+    <view class="seach_input">
+        <view class="seach_left">
+            <view class="start_date">
+                <text>住</text><text>{{StartDate.Month}}-{{StartDate.Day}}</text>
+            </view>
+            <view class="end_date">
+                <text>离</text><text>{{EndtDate.Month}}-{{EndtDate.Day}}</text>
+            </view>
+        </view>
+        <view class="seach_right">
+            <input type="text" name="" placeholder="酒店名/商圈/地标" value="" class="cityinput" />
+        </view>
+    </view>
+</view>
+<!--seach end-->
+
+<!--main start-->
+<scroll-view class="main clear" style="height: 1160rpx;" scroll-y="true">
+
+    <!--hotel_list start-->
+    <view wx:for="{{hotelListRes.ListHotel}}" class="hotel_list clear">
+        <!--hotel_dt-->
+        <view class="hotel_dt">
+            <image src="{{item.ListHotelCoverImg.length>0?item.ListHotelCoverImg[0].PicUrl:'../../../images/hotel/images.png'}}" class="hotel_img"></image>
+        </view>
+        <!--hotel_dd-->
+        <view class="hotel_dd">
+            <text class="hotel_title">{{item.HotelName}}</text>
+            <text class="hotel_home">{{item.HotelStarType}}</text>
+            <view class="hotel_icon">
+                <image src="../../../images/hotel/wifi.png" class="icon_wifi"></image>
+                <image src="../../../images/hotel/icon_p.png" class="icon_p"></image>
+            </view>
+            <text class="hotel_range">{{item.HotelAddress}}</text>
+            <view class="hotel_ticket">
+                <text>返</text>
+                <text>新客券</text>
+            </view>
+            <view class="hotel_price">
+                <text class="price_texts">已住满</text>
+            </view>
+        </view>
+    </view>
+    <!--hotel_list end-->
+
+    <!--hotel_list start-->
+    <view class="hotel_list clear">
+        <!--hotel_dt-->
+        <view class="hotel_dt">
+            <image src="../../../images/hotel/images.png" class="hotel_img"></image>
+        </view>
+        <!--hotel_dd-->
+        <view class="hotel_dd">
+            <text class="hotel_title">北京永和星宾馆宾星馆宾馆标准房北京永和星宾馆宾星馆宾馆标准房</text>
+            <text class="hotel_home">高档型</text>
+            <view class="hotel_icon">
+                <image src="../../../images/hotel/wifi.png" class="icon_wifi"></image>
+                <image src="../../../images/hotel/icon_p.png" class="icon_p"></image>
+            </view>
+            <text class="hotel_range">距离您3公里，媒体村商圈</text>
+            <view class="hotel_ticket">
+                <text>返</text>
+                <text>新客券</text>
+            </view>
+            <view class="hotel_price">
+                <text class="price_text"><text class="price_em">￥</text>615</text><text class="price_span">起</text>
+            </view>
+        </view>
+    </view>
+    <!--hotel_list end-->
+</scroll-view>
+<!--main end-->
+
+<!--footer start-->
+<view class="footer">
+    <view class="footer_dl">
+        <view class="footer_dt">
+            <image src="../../../images/hotel/icon_px.png" class="footer_img"></image>
+        </view>
+        <view class="footer_dd">
+            <text>排序</text>
+        </view>
+    </view>
+</view>
+<!--footer end-->
+
+<!--排序 start-->
+<view class="sorting" style="display: none;">
+    <view class="sorting_bg"></view>
+    <view class="sorting_con">
+        <view class="sorting_ul">
+            <view class="sorting_li sorting_active">
+                <text>推荐排序</text>
+            </view>
+            <view class="sorting_li">
+                <text>价格  低→高</text>
+            </view>
+            <view class="sorting_li">
+                <text>价格  高→低</text>
+            </view>
+            <view class="sorting_li">
+                <text>距离排序</text>
+            </view>
+        </view>
+    </view>
+</view>
+<!--排序 end-->

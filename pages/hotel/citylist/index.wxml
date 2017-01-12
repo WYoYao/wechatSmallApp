@@ -1,0 +1,96 @@
+<view class="seach">
+    <view class="seach_con">
+        <input type="text" placeholder="输入城市名或区域" />
+    </view>
+</view>
+<view class="slider_content">
+    <!--城市列表 start-->
+    <view class="slider_ul">
+        <!--热门城市 start-->
+        <view class="slider_li">
+            <text class="jianpin">热门城市</text>
+            <view class="slider_li_ul">
+                <view class="city_li city_height">
+                    <text class="city_list">北京</text>
+                    <text class="city_list">上海</text>
+                    <text class="city_list">广州</text>
+                    <text class="city_list">沈阳</text>
+                </view>
+            </view>
+        </view>
+        <!--热门城市 end-->
+
+        <!--城市列表 start-->
+        <view class="slider_li clear">
+            <text class="jianpin">A</text>
+            <view class="slider_li_ul">
+                <view class="city_li select">
+                    <text class="city">阿拉善盟</text>
+                </view>
+                <view class="city_li">
+                    <text class="city">鞍山市</text>
+                </view>
+                <view class="city_li">
+                    <text class="city">安庆市</text>
+                </view>
+                <view class="city_li">
+                    <text class="city">安阳市</text>
+                </view>
+            </view>
+        </view>
+        <!--城市列表 end-->
+    </view>
+    <!--城市列表 end-->
+
+    <!--定位常用 start-->
+    <view class="slider_nav">
+        <view class="nav_ul">
+            <view class="nav_ul_li">
+                <text>定位</text>
+            </view>
+            <view class="nav_ul_li">
+                <text>常用</text>
+            </view>
+            <view class="nav_ul_li">
+                <text>A</text>
+            </view>
+            <view class="nav_ul_li">
+                <text>B</text>
+            </view>
+            <view class="nav_ul_li">
+                <text>C</text>
+            </view>
+            <view class="nav_ul_li">
+                <text>D</text>
+            </view>
+        </view>
+    </view>
+    <!--定位常用 end-->
+</view>
+
+<!--搜索弹层 start-->
+<view class="seach_layer" style="display: none">
+    <view class="seach_layer_bg"></view>
+    <view class="seach_layer_con">
+        <!--搜索框 start-->
+        <view class="text_left">
+            <view class="text_left_p">
+                <input type="text" class="seach_text" placeholder="输入城市名或区域" />
+                <input type="button" class="seach_btn" value="取消" />
+            </view>
+        </view>
+        <!--搜索框 start-->
+
+        <!--搜索结果 start-->
+        <view class="seach_result">
+            <view class="result_ul">
+                <view class="result_li">
+                    <text>阿拉善盟</text>
+                </view>
+            </view>
+            <view class="result_none">暂无结果！</view>
+        </view>
+        <!--搜索结果 start-->
+    </view>
+</view>
+<!--搜索弹层 end-->
