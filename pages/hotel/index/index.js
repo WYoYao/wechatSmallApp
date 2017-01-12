@@ -3,8 +3,10 @@
 let {to} = require("../../../utils/navigate.js");
 // let navigate=require("../../../utils/navigate.js");
 let Jrequest = require("../../../api/request.js");
-// const {Jdate} =require("../../../utils/date.js");
-// console.log(Jdate);
+const JDate =require("../../../utils/JDate.js");
+
+let aa=new JDate();
+
 var app = getApp();
 // 调用酒店列表
 // let req={
@@ -19,15 +21,11 @@ var app = getApp();
 //     "EndDate": "2017-01-13"
 // };
 
-// new Jrequest("HotelApi").get("_GetHotelList",req, data => { console.log(data) });
-
-
-
 Page({
   data: {
     state:{
-      StartDate: "2017-01-12",
-      EndDate:"2017-01-13",
+      StartDate: JDate().Date2shortStr(),
+      EndDate:JDate().addDate(1).Date2shortStr(),
       CityId:"110000",
       KeyWord:"",
       PriceMin:0,
@@ -35,10 +33,12 @@ Page({
       HotelStarId:-1,
     },
     StartDate:{
-
+      Month:JDate().Date2Json().month,
+      Day:JDate().Date2Json().date
     },
     EndtDate:{
-      
+      Month:JDate().addDate(1).Date2Json().month,
+      Day:JDate().addDate(1).Date2Json().date
     }
   },
   setStartDate(StartDate){
@@ -79,8 +79,8 @@ Page({
     // Do some initialize when page load.
   },
   onReady: function () {
-    this.setStartDate("2017/1/12");
-    this.setEndDate("2017/1/13")
+    // this.setStartDate("2017/1/12");
+    // this.setEndDate("2017/1/13")
     // Do something when page ready.
   },
   onShow: function () {

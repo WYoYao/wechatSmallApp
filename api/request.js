@@ -1,7 +1,7 @@
 
 const { get_type } = require("../utils/valite.js");
 const md5 = require("../utils/md5.js");
-const {timestamp} = require("../utils/date.js");
+const JDate = require("../utils/JDate.js");
 const conf = require("./conf.js");
 
 // const conf = {
@@ -35,7 +35,7 @@ class Jrequest {
         // }
 
         //时间戳
-        let Timestamp = timestamp();
+        let Timestamp = Date.now();
         
         let Sign = md5.hex_md5(JSON.stringify(Json) + MethodName + Timestamp + this.SignatureKey);
 
