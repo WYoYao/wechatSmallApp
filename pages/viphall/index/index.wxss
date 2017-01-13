@@ -1,0 +1,19 @@
+/*搜索框*/
+.seach{width: 100%;height: 60rpx;background: #f5f5f5;padding: 14rpx 0; border-bottom: 2rpx solid #dedede;position: fixed;left: 0;top: 0;right: 0;z-index: 100;}
+.seach_input{ margin: 0 20rpx;background: #fff;height: 60rpx; border-radius: 10rpx;position: relative;}
+.search_text{float: left;margin-left: 10rpx;background: url(../images/search_copy.png) no-repeat left;background-size: 28rpx 27rpx;}
+.input_val{width: 100%; height: 50rpx; line-height: 50rpx;margin-left: 38rpx;font-size: 24rpx;color: #333;}
+
+/*贵宾厅列表展示*/
+.list{margin-top:50px; width: 95%;}
+.vip_list_group{margin:0 auto;width:90%;font-size:13px;}
+.vip_name{color:#666;font-weight:bold;height:35px;line-height:35px;border-bottom:1px solid #DEDEDE;font-size:16px;}
+.vip_list{margin-top:10px;margin-left:10px; border-bottom: 5px solid #EEEEEE; padding-bottom:10px;overflow: hidden;}
+.vip_img{float:left;width:95px;height:85px;border:0;vertical-align:middle;}
+.vip_info{float:left;margin-left:10px;}    
+.vip_text{color:#666;padding:5px;}
+.vip_text1{margin-left:10px;color:#666}
+.vip_info_padding{margin-left:5px;padding-top:5px;}
+.vip_img_ico{width:15px;height:13px;float:left;margin-right:15px;padding-top:5px;}
+.vip_text_price{font-size:15px;color: #FFB759;padding-top: 5px;margin-left:10px;}
+  

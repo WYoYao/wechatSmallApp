@@ -11,7 +11,13 @@ const conf = {
         //酒店API地址124.193.250.33
         url:"http://172.16.5.11:8020/HotelAPI.aspx",
         //酒店签名(必须与服务器一致)
-        SignatureKey:"!QAZxsw2#EDC"
+        SignatureKey:"!QAZxsw2#EDC",
+        BaseRequest:{
+            AppSource: 2,
+            ClientLanguage: 0,
+            SourceWay: 80,
+            FunctionVersion: 2
+        }
     },
 
     VipHallApi:{

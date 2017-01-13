@@ -2,6 +2,7 @@
   "pages":[
     "pages/index",
     "pages/hotel/index/index",
+    "pages/hotel/hoteldetails/index",
     "components/picker/picker",
     "pages/hotel/hotelList/index",
     "pages/hotel/citylist/index",

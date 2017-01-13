@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background: url(../../../../images/hotel/icon_seach.png) no-repeat right;
+    background: url(../images/icon_seach.png) no-repeat right;
     background-size: 24rpx 16rpx;
 }
 .start_date,.end_date{
@@ -41,7 +41,7 @@
 .seach_right{
     float: left;
     margin-left: 170rpx;
-    background: url(../../../../images/hotel/search_copy.png) no-repeat left;
+    background: url(../images/search_copy.png) no-repeat left;
     background-size: 28rpx 27rpx;
 }
 .cityinput{
@@ -108,7 +108,8 @@
 }
 .hotel_icon{
     height: 24rpx;
-    margin-bottom: 6rpx;
+    margin-top:-14rpx;
+    margin-bottom:10rpx;
 }
 .icon_wifi{
     width: 26rpx;
@@ -123,6 +124,13 @@
     font-size: 24rpx;
     color: #999;
     line-height: 1.2;
+    display: -webkit-box;
+    overflow: hidden; 
+    text-overflow:ellipsis; 
+    word-break:break-all; 
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:1;
+    
 }
 .hotel_ticket text{
     font-size: 20rpx;

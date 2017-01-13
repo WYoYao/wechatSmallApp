@@ -1,9 +1,14 @@
 // 引入调用接口类
 let Jrequest = require("../../../api/request.js");
+let JDate = require("../../../utils/JDate.js");
+let {to} = require("../../../utils/navigate.js");
 
-function swichStartType(type){
+/**
+ * 星级转换
+ */
+function swichStartType(item){
   
-  let result = {
+  item.HotelStarType = {
     "1":"五星级", 
     "2":"豪华型", 
     "3":"四星级", 
@@ -12,28 +17,42 @@ function swichStartType(type){
     "6":"舒适型", 
     "11":"经济型", 
     "7":"二星级"
-  }[type];
+  }[item.HotelStarId];
 
-  return result || "";
+  return item;
 }
+
+/**
+ * 货币类型转换
+ */
+function switchPriceType(item) {
+  
+  item.PriceType = {
+    "1":"￥", 
+    "2":"$", 
+    "3":"HK$", 
+    "11":"MOP$", 
+  }[item.CurrencyId];
+
+  return item;
+}
+
+/**
+ * 保存字符出的JSON 用于跳转
+ */
+
+function toJSONStringify(item){
+  item.string=JSON.stringify(item);
+  return item;
+}
+
 
 Page({
   helloWorld:function(){
     return "HelloWorld";
   },
-  handle_go_index: function () {
-    wx.navigateTo({
-      url: "../index/index",
-      success: function (res) {
-        // success
-      },
-      fail: function () {
-        // fail
-      },
-      complete: function () {
-        // complete
-      }
-    })
+  handleToDetail: function (e) {
+    to("../hoteldetails/index",Object.assign(JSON.parse(e.currentTarget.dataset.item),this.data.state));
   },
   // 设置入住日期
   setStartDate(StartDate) {
@@ -42,11 +61,11 @@ Page({
         StartDate
       })
     })
-    let date = new Date(StartDate);
+    let date = new JDate(StartDate).Date2Json();
     this.setData({
       StartDate: {
-        Month: date.getMonth() + 1,
-        Day: date.getDate()
+        Month: date.month,
+        Day: date.date
       }
     })
   },
@@ -57,30 +76,25 @@ Page({
         EndDate
       })
     })
-    let date = new Date(EndDate);
+    let date = new JDate(EndDate).Date2Json();
     this.setData({
       EndtDate: {
-        Month: date.getMonth() + 1,
-        Day: date.getDate()
+        Month: date.month,
+        Day: date.date
       }
     })
   },
   // 获取酒店列表
   getHotelList:function(){
-    new Jrequest("HotelApi").get("_GetHotelList", Object.assign(this.data.state,{
-      BaseRequest: {
-        AppSource: 2,
-        ClientLanguage: 0,
-        SourceWay: 80,
-        FunctionVersion: 2
-      },
-    }), data => { 
+    new Jrequest("HotelApi").get("_GetHotelList", this.data.state, data => { 
+
       if(data.BaseResponse.Code==1){
 
         // 获取的数据转换出页面需要的属性
         let ListHotel=data.ListHotel.map(item=>{
-          item.HotelStarType=swichStartType(item.HotelStarId);
-          return item
+
+          return [swichStartType,switchPriceType,toJSONStringify].reduce((content,fn)=>fn(content),item)
+
         });
 
         this.setData({
@@ -89,7 +103,9 @@ Page({
             TotalCount:data.TotalCount
           }
         })
+
       }
+
      });
   },
   data: {

@@ -1,3 +1,157 @@
-<view>
-<text>Hello Member</text>
+<!--seach start-->
+<view class="seach">
+    <view class="seach_input">
+      	<view class="search_text">
+            <input type="text" name="" placeholder="搜索贵宾厅" value="" class="input_val"/>
+       </view>
+    </view>
 </view>
+<!--seach end-->
+
+<!--main start-->
+<view class="list clear">
+    <!-- vipList start-->
+    <view class="vip_list_group">
+    		<view class="vip_name">
+        	<text>天津贵宾厅</text>
+        </view>
+        <!--VipList子贵宾厅  start-->
+        <view class="vip_list">
+            <view><image class="vip_img" src="../images/vip.png"></image></view>
+            <view class="vip_info" >
+                <view class="vip_text">天津滨海机场金色逸站</view>
+                <view>
+                	<text class="vip_text">T2安检内</text>
+                	<text class="vip_text1">营业时间:06:40-21:30</text>
+                </view>
+                <view class="vip_info_padding">
+                     <image class="vip_img_ico" src="../images/icon_alarmClock.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_bed.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_fiwi.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_tv.png"></image>
+                </view>
+            </view>
+            <view class="vip_text_price"><text class="vip_text_price">￥150/人</text></view>
+        </view>
+        <!--VipList子贵宾厅 end-->
+        
+        
+        <!--VipList子贵宾厅  start-->
+        <view class="vip_list">
+            <view><image class="vip_img" src="../images/vip.png"></image></view>
+            <view class="vip_info" >
+                <view class="vip_text">天津滨海机场金色逸站</view>
+                <view>
+                	<text class="vip_text">T2安检内</text>
+                	<text class="vip_text1">营业时间:06:40-21:30</text>
+                </view>
+                <view class="vip_info_padding">
+                     <image class="vip_img_ico" src="../images/icon_alarmClock.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_bed.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_fiwi.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_tv.png"></image>
+                </view>
+            </view>
+            <view class="vip_text_price"><text class="vip_text_price">￥150/人</text></view>
+        </view>
+        <!--VipList子贵宾厅 end-->
+        
+        <!--VipList子贵宾厅  start-->
+        <view class="vip_list">
+            <view><image class="vip_img" src="../images/vip.png"></image></view>
+            <view class="vip_info" >
+                <view class="vip_text">天津滨海机场金色逸站</view>
+                <view>
+                	<text class="vip_text">T2安检内</text>
+                	<text class="vip_text1">营业时间:06:40-21:30</text>
+                </view>
+                <view class="vip_info_padding">
+                     <image class="vip_img_ico" src="../images/icon_alarmClock.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_bed.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_fiwi.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_tv.png"></image>
+                </view>
+            </view>
+            <view class="vip_text_price"><text class="vip_text_price">￥150/人</text></view>
+        </view>
+        <!--VipList子贵宾厅 end-->
+       	
+       	<view class="vip_list">
+            <view>
+                <image class="vip_img" src="../images/vip.png"></image>
+            </view>
+            <view class="vip_info" >
+                <view class="vip_text">天津滨海机场金色逸站</view>
+                <view>
+                	<text class="vip_text">T2安检内</text>
+                	<text class="vip_text1">营业时间:06:40-21:30</text>
+                </view>
+                <view class="vip_info_padding">
+                     <image class="vip_img_ico" src="../images/icon_alarmClock.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_bed.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_fiwi.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_tv.png"></image>
+                </view>
+             </view>
+            <view class="vip_text_price"><text class="vip_text_price">￥150/人</text></view>
+        </view>
+       
+    </view>
+    <!-- viplist end-->
+    
+    <!-- vipList start-->
+    <view class="vip_list_group">
+    		<view class="vip_name">
+        	<text>云南贵宾厅</text>
+        </view>
+        <view class="vip_list">
+            <view>
+                <image class="vip_img" src="../images/vip.png"></image>
+            </view>
+            <view class="vip_info" >
+                <view class="vip_text">天津滨海机场金色逸站</view>
+                <view>
+                	<text class="vip_text">T2安检内</text>
+                	<text class="vip_text1">营业时间:06:40-21:30</text>
+                </view>
+                <view class="vip_info_padding">
+                     <image class="vip_img_ico" src="../images/icon_alarmClock.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_bed.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_fiwi.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_tv.png"></image>
+                </view>
+             </view>
+            <view class="vip_text_price"><text class="vip_text_price">￥150/人</text></view>
+        </view>
+    </view>
+    <!-- viplist end-->
+    
+        <!-- vipList start-->
+    <view class="vip_list_group">
+    		<view class="vip_name">
+        	<text>北京贵宾厅</text>
+        </view>
+        <view class="vip_list">
+            <view>
+                <image class="vip_img" src="../images/vip.png"></image>
+            </view>
+            <view class="vip_info" >
+                <view class="vip_text">天津滨海机场金色逸站</view>
+                <view>
+                	<text class="vip_text">T2安检内</text>
+                	<text class="vip_text1">营业时间:06:40-21:30</text>
+                </view>
+                <view class="vip_info_padding">
+                     <image class="vip_img_ico" src="../images/icon_alarmClock.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_bed.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_fiwi.png"></image>
+                     <image class="vip_img_ico" src="../images/icon_tv.png"></image>
+                </view>
+             </view>
+            <view class="vip_text_price"><text class="vip_text_price">￥150/人</text></view>
+        </view>
+    </view>
+    <!-- viplist end-->
+    
+</view>
+<!--mian end-->
