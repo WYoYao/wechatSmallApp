@@ -27,7 +27,7 @@ Page({
   data: {
     state:{
       StartDate: "2017-01-12",
-      EndDate:"2017-01-13",
+      EndDate:"2017-01-15",
       CityId:"110000",
       KeyWord:"",
       PriceMin:0,
@@ -80,7 +80,7 @@ Page({
   },
   onReady: function () {
     this.setStartDate("2017/1/12");
-    this.setEndDate("2017/1/13")
+    this.setEndDate("2017/1/16")
     // Do something when page ready.
   },
   onShow: function () {

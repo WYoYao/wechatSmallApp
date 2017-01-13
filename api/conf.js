@@ -12,8 +12,11 @@ const conf = {
         url:"http://172.16.5.11:8020/HotelAPI.aspx",
         //酒店签名(必须与服务器一致)
         SignatureKey:"!QAZxsw2#EDC"
-    }
+    },
 
+    VipHallApi:{
+        url:"http://172.16.6.134/awk/v1/API/WebAPI2AirwayKeeper.aspx"
+    }
     
 }
 

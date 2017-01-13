@@ -1,0 +1,19 @@
+<view class="main"> 
+    <view class="list">
+        <text class="title">金色世纪首页</text>
+        <view class="button">
+            <button type="default" style="background-color: #ff8522;color: #fff;" id="butHotel" loading="{{loading}}" plain="{{plain}}"
+                disabled="{{disabled}}" bindtap="to_hotel" hover-class="other-button-hover"> 订酒店 </button>
+        </view>
+
+        <view class="button">
+            <button type="default" style="background-color: #ff8522;color: #fff;" id="butViphall" loading="{{loading}}" plain="{{plain}}"
+                disabled="{{disabled}}" bindtap="to_viphall" hover-class="other-button-hover"> 贵宾厅 </button>
+        </view>
+
+        <view class="button">
+            <button type="default" style="background-color: #ff8522;color: #fff;" id="butOrder" loading="{{loading}}" plain="{{plain}}"
+                disabled="{{disabled}}" bindtap="to_order" hover-class="other-button-hover"> 订单 </button>
+        </view>
+    </view>
+</view>

@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/index",
     "pages/hotel/index/index",
     "components/picker/picker",
     "pages/hotel/hotelList/index",

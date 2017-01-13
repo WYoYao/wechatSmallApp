@@ -1,0 +1,11 @@
+
+/**index.wxss**/
+
+.main{width:95%;margin:0 auto;}
+.list{width:60%;margin:100px auto;}
+.title{color:#000;font-weight:bold;font-size:30px;margin:50px 10px;}
+
+.button{margin:20px;}
+
+
+
