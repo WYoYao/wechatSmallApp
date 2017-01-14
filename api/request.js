@@ -31,14 +31,6 @@ class Jrequest {
         
         let Sign = md5.hex_md5(JSON.stringify(Json) + MethodName + Timestamp + this.SignatureKey);
 
-        console.log(JSON.stringify({
-                MethodName,
-                Json,
-                Sign,
-                Timestamp
-            }));
-
-
         //发送微信请求
         wx.request({
             url: this.url,

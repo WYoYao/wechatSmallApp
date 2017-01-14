@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/index",
-    "pages/hotel/index/index",
     "pages/hotel/hoteldetails/index",
+    "pages/index",
+    "pages/hotel/fillorder/index",
+    "pages/hotel/index/index",
     "components/picker/picker",
     "pages/hotel/hotelList/index",
     "pages/hotel/citylist/index",

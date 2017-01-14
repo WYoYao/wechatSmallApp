@@ -2,57 +2,13 @@
 let Jrequest = require("../../../api/request.js");
 let JDate = require("../../../utils/JDate.js");
 let {to} = require("../../../utils/navigate.js");
+let {swichStartType,switchPriceType}=require("../common/hotelConvert.js");
 
-/**
- * 星级转换
- */
-function swichStartType(item){
-  
-  item.HotelStarType = {
-    "1":"五星级", 
-    "2":"豪华型", 
-    "3":"四星级", 
-    "4":"高档型", 
-    "5":"三星级", 
-    "6":"舒适型", 
-    "11":"经济型", 
-    "7":"二星级"
-  }[item.HotelStarId];
-
-  return item;
-}
-
-/**
- * 货币类型转换
- */
-function switchPriceType(item) {
-  
-  item.PriceType = {
-    "1":"￥", 
-    "2":"$", 
-    "3":"HK$", 
-    "11":"MOP$", 
-  }[item.CurrencyId];
-
-  return item;
-}
-
-/**
- * 保存字符出的JSON 用于跳转
- */
-
-function toJSONStringify(item){
-  item.string=JSON.stringify(item);
-  return item;
-}
 
 
 Page({
-  helloWorld:function(){
-    return "HelloWorld";
-  },
   handleToDetail: function (e) {
-    to("../hoteldetails/index",Object.assign(JSON.parse(e.currentTarget.dataset.item),this.data.state));
+    to("../hoteldetails/index", Object.assign(JSON.parse(e.currentTarget.dataset.item), this.data.state));
   },
   // 设置入住日期
   setStartDate(StartDate) {
@@ -85,28 +41,30 @@ Page({
     })
   },
   // 获取酒店列表
-  getHotelList:function(){
-    new Jrequest("HotelApi").get("_GetHotelList", this.data.state, data => { 
+  getHotelList: function () {
+    new Jrequest("HotelApi").get("_GetHotelList", this.data.state, data => {
 
-      if(data.BaseResponse.Code==1){
+      if (data.BaseResponse.Code == 1) {
 
         // 获取的数据转换出页面需要的属性
-        let ListHotel=data.ListHotel.map(item=>{
+        let ListHotel = data.ListHotel.map(item => {
 
-          return [swichStartType,switchPriceType,toJSONStringify].reduce((content,fn)=>fn(content),item)
-
+          item.HotelStarType = swichStartType(item.HotelStarId);
+          item.PriceType = switchPriceType(item.CurrencyId);
+          item.string = JSON.stringify(item);
+          return item;
         });
 
         this.setData({
-          hotelListRes:{
+          hotelListRes: {
             ListHotel,
-            TotalCount:data.TotalCount
+            TotalCount: data.TotalCount
           }
         })
 
       }
 
-     });
+    });
   },
   data: {
 

@@ -1,8 +1,8 @@
 //index.js
 //获取应用实例
-let {to} = require("../../../utils/navigate.js");
+const {to} = require("../../../utils/navigate.js");
 // let navigate=require("../../../utils/navigate.js");
-let Jrequest = require("../../../api/request.js");
+const Jrequest = require("../../../api/request.js");
 const JDate =require("../../../utils/JDate.js");
 
 let aa=new JDate();

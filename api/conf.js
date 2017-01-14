@@ -15,7 +15,7 @@ const conf = {
         BaseRequest:{
             AppSource: 2,
             ClientLanguage: 0,
-            SourceWay: 80,
+            SourceWay: 20,
             FunctionVersion: 2
         }
     },
