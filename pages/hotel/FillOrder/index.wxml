@@ -1,17 +1,17 @@
 <!--header start-->
 <view class="header">
     <view class="room_name">
-        <text>汉庭酒店(北京奥运村北苑店)</text>
+        <text>{{HotelName}}</text>
     </view>
     <view class="room_fx">
-        <text>高级大床房</text>
+        <text>{{RoomName}}</text>
     </view>
     <view class="room_bh">
-        <text>入住：12月22日 - 12月23日</text>
-        <text>共1晚</text>
+        <text>入住：{{StartDate.Month}}月{{StartDate.Day}}日 - {{EndDate.Month}}月{{EndDate.Day}}日</text>
+        <text>共{{totalDays}}晚</text>
     </view>
     <view class="room_bh">
-        <text>早餐：无早</text>
+        <text>早餐：{{Breakfast}}</text>
     </view>
 </view>
 <!--header end-->
@@ -23,11 +23,14 @@
             <view class="section_left">
                 <text>房间数</text>
             </view>
+
             <view class="section_right">
-                <view class="section_right_con">
-                    <view class="icon"></view>
-                    <text>1间</text>
-                </view>
+                <picker bindchange="bindRoomNumberPickerChange" value="{{state.RoomNum-1}}" range="{{roomEnum}}">
+                    <view class="section_right_con">
+                        <view class="icon"></view>
+                        <text>{{roomEnum[state.RoomNum-1]}}</text>
+                    </view>
+                </picker>
             </view>
         </view>
         <view class="section_p clear">
@@ -35,10 +38,12 @@
                 <text>到店时间</text>
             </view>
             <view class="section_right">
-                <view class="section_right_con">
-                    <view class="icon"></view>
-                    <text>14:00 前</text>
-                </view>
+                <picker bindchange="bindArrivalTimePickerChange" value="{{ArrivalTimeIndex}}" range-key="key" range="{{ArrivalTimeEnum}}">
+                    <view class="section_right_con">
+                        <view class="icon"></view>
+                        <text>{{ArrivalTimeEnum[ArrivalTimeIndex].key}}</text>
+                    </view>
+                </picker>
             </view>
         </view>
         <view class="section_p clear">
@@ -124,123 +129,123 @@
 
 <!--明细弹层 start-->
 <view class="details_layer" style="display: none;">
-    <view class="details_bg"></view>
-    <view class="details_con">
-        <view class="details_p">
-            <text class="details_left">房费</text>
-            <text class="details_price">￥ 1376.00</text>
-        </view>
-        <view class="details_span clear">
-            <text class="span_left">
-                <text>2015-10-12</text>
-                <text>无早</text>
-            </text>
-            <text class="span_price">￥ 688 x2</text>
-        </view>
-        <view class="details_span clear">
-            <text class="span_left">
-                <text>2015-10-12</text>
-                <text>无早</text>
-            </text>
-            <text class="span_price">￥ 688 x2</text>
-        </view>
+<view class="details_bg"></view>
+<view class="details_con">
+    <view class="details_p">
+        <text class="details_left">房费</text>
+        <text class="details_price">￥ 1376.00</text>
     </view>
+    <view class="details_span clear">
+        <text class="span_left">
+            <text>2015-10-12</text>
+            <text>无早</text>
+        </text>
+        <text class="span_price">￥ 688 x2</text>
+    </view>
+    <view class="details_span clear">
+        <text class="span_left">
+            <text>2015-10-12</text>
+            <text>无早</text>
+        </text>
+        <text class="span_price">￥ 688 x2</text>
+    </view>
+</view>
 </view>
 <!--明细弹层 end-->
 
 <!--房间弹层 start-->
 <view class="room_layer" style="display: none;">
-    <view class="room_bg"></view>
-    <view class="room_con">
-        <view class="room_head">
-            <view class="close_btn"></view>
-            <text>请选择房间数</text>
+<view class="room_bg"></view>
+<view class="room_con">
+    <view class="room_head">
+        <view class="close_btn"></view>
+        <text>请选择房间数</text>
+    </view>
+    <view class="room_ul">
+        <view class="room_li room_active">
+            <text>1间</text>
         </view>
-        <view class="room_ul">
-            <view class="room_li room_active">
-                <text>1间</text>
-            </view>
-            <view class="room_li">
-                <text>2间</text>
-            </view>
-            <view class="room_li">
-                <text>3间</text>
-            </view>
-            <view class="room_li">
-                <text>4间</text>
-            </view>
-            <view class="room_li">
-                <text>5间</text>
-            </view>
-            <view class="room_li">
-                <text>6间</text>
-            </view>
-            <view class="room_li">
-                <text>7间</text>
-            </view>
-            <view class="room_li">
-                <text>8间</text>
-            </view>
-            <view class="room_li">
-                <text>9间</text>
-            </view>
+        <view class="room_li">
+            <text>2间</text>
+        </view>
+        <view class="room_li">
+            <text>3间</text>
+        </view>
+        <view class="room_li">
+            <text>4间</text>
+        </view>
+        <view class="room_li">
+            <text>5间</text>
+        </view>
+        <view class="room_li">
+            <text>6间</text>
+        </view>
+        <view class="room_li">
+            <text>7间</text>
+        </view>
+        <view class="room_li">
+            <text>8间</text>
+        </view>
+        <view class="room_li">
+            <text>9间</text>
         </view>
     </view>
+</view>
 </view>
 <!--房间弹层 end-->
 
 <!--到店时间弹层 start-->
 <view class="time_layer" style="display: none;">
-    <view class="room_bg"></view>
-    <view class="room_con">
-        <view class="room_head">
-            <view class="close_btn"></view>
-            <text>最晚到店时间</text>
+<view class="room_bg"></view>
+<view class="room_con">
+    <view class="room_head">
+        <view class="close_btn"></view>
+        <text>最晚到店时间</text>
+    </view>
+    <view class="room_ul">
+        <view class="room_li room_active">
+            <text>17:00 前</text>
         </view>
-        <view class="room_ul">
-            <view class="room_li room_active">
-                <text>17:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>18:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>19:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>20:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>21:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>22:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>23:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>23:59 前</text>
-            </view>
-            <view class="room_li">
-                <text>次日 01:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>次日 02:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>次日 03:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>次日 04:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>次日 05:00 前</text>
-            </view>
-            <view class="room_li">
-                <text>次日 06:00 前</text>
-            </view>
+        <view class="room_li">
+            <text>18:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>19:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>20:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>21:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>22:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>23:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>23:59 前</text>
+        </view>
+        <view class="room_li">
+            <text>次日 01:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>次日 02:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>次日 03:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>次日 04:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>次日 05:00 前</text>
+        </view>
+        <view class="room_li">
+            <text>次日 06:00 前</text>
         </view>
     </view>
+</view>
 </view>
 <!--到店时间弹层 end-->

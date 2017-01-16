@@ -1,0 +1,128 @@
+<!--main start-->
+<view class="metro_list">
+    <view class="metro_left">
+        <view class="metro_ul">
+            <view class="metro_li">
+                <text>10号线</text>
+            </view>
+            <view class="metro_li metro_active">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+            <view class="metro_li">
+                <text>13号线</text>
+            </view>
+        </view>
+    </view>
+    <view class="metro_right">
+        <view class="right_ul" style="display: block">
+            <view class="right_li">
+                <text>巴沟</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+            <view class="right_li">
+                <text>苏州街</text>
+            </view>
+        </view>
+        <view class="right_ul">
+            <view class="right_li">
+                <text>知春路</text>
+            </view>
+            <view class="right_li">
+                <text>大钟寺</text>
+            </view>
+        </view>
+    </view>
+</view>
+<!--main end-->

@@ -1,0 +1,257 @@
+<!--seach start-->
+<view class="seach">
+    <view class="seach_input">
+        <view class="seach_right">
+            <input type="text" name="" placeholder="酒店名/商圈/地标" value="" class="cityinput" />
+        </view>
+    </view>
+</view>
+<!--seach end-->
+
+<!--main start-->
+<view class="main clear">
+    <!--历史 start-->
+    <view class="current">
+        <!--title start-->
+        <view class="current_title">
+            <view class="title_left">
+                <view class="title_icon history"></view>
+                <text>搜索历史</text>
+            </view>
+            <view class="title_right">
+                <view class="title_delete"></view>
+                <text>删除</text>
+            </view>
+        </view>
+        <!--title end-->
+
+        <!--list start-->
+        <view class="current_list clear">
+            <view class="current_li">
+                <text>三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li current_move">
+                <text>丰台体育馆丰台体育馆丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text>地坛公园</text>
+            </view>
+        </view>
+        <!--list end-->
+    </view>
+    <!--历史 end-->
+
+    <!--机场车站 start-->
+    <view class="current">
+        <!--title start-->
+        <view class="current_title">
+            <view class="title_left">
+                <view class="title_icon flight"></view>
+                <text>机场车站</text>
+            </view>
+        </view>
+        <!--title end-->
+
+        <!--list start-->
+        <view class="current_list clear">
+            <view class="current_li">
+                <text>三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li current_move">
+                <text>丰台体育馆丰台体育馆丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text>地坛公园</text>
+            </view>
+             <view class="current_li current_move">
+                <text>三元桥三元桥三元桥</text>
+            </view>
+            <view class="current_li">
+                <text></text>
+            </view>
+            <view class="current_li ">
+                <text></text>
+            </view>
+            <view class="current_li">
+                <text></text>
+            </view>
+        </view>
+        <!--list end-->
+    </view>
+    <!--机场车站 end-->
+
+    <!--商圈景点 start-->
+    <view class="current">
+        <!--title start-->
+        <view class="current_title">
+            <view class="title_left">
+                <view class="title_icon spot"></view>
+                <text>商圈景点</text>
+            </view>
+        </view>
+        <!--title end-->
+
+        <!--list start-->
+        <view class="current_list clear">
+            <view class="current_li">
+                <text>三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li current_move">
+                <text>丰台体育馆丰台体育馆丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text>地坛公园</text>
+            </view>
+             <view class="current_li current_move">
+                <text>三元桥三元桥三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li ">
+                <text>丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text class="move_btn">更多</text>
+            </view>
+        </view>
+        <!--list end-->
+    </view>
+    <!--商圈景点 end-->
+
+    <!--地铁沿线 start-->
+    <view class="current">
+        <!--title start-->
+        <view class="current_title">
+            <view class="title_left">
+                <view class="title_icon metro"></view>
+                <text>地铁沿线</text>
+            </view>
+        </view>
+        <!--title end-->
+
+        <!--list start-->
+        <view class="current_list clear">
+            <view class="current_li">
+                <text>三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li current_move">
+                <text>丰台体育馆丰台体育馆丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text>地坛公园</text>
+            </view>
+             <view class="current_li current_move">
+                <text>三元桥三元桥三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li ">
+                <text>丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text class="move_btn">更多</text>
+            </view>
+        </view>
+        <!--list end-->
+    </view>
+    <!--地铁沿线 end-->
+
+    <!--品牌连锁 start-->
+    <view class="current">
+        <!--title start-->
+        <view class="current_title">
+            <view class="title_left">
+                <view class="title_icon brand"></view>
+                <text>品牌连锁</text>
+            </view>
+        </view>
+        <!--title end-->
+
+        <!--list start-->
+        <view class="current_list clear">
+            <view class="current_li">
+                <text>三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li current_move">
+                <text>丰台体育馆丰台体育馆丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text>地坛公园</text>
+            </view>
+             <view class="current_li current_move">
+                <text>三元桥三元桥三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li ">
+                <text>丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text class="move_btn">更多</text>
+            </view>
+        </view>
+        <!--list end-->
+    </view>
+    <!--品牌连锁 end-->
+
+    <!--行政区域 start-->
+    <view class="current">
+        <!--title start-->
+        <view class="current_title">
+            <view class="title_left">
+                <view class="title_icon area"></view>
+                <text>行政区域</text>
+            </view>
+        </view>
+        <!--title end-->
+
+        <!--list start-->
+        <view class="current_list clear">
+            <view class="current_li">
+                <text>三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li current_move">
+                <text>丰台体育馆丰台体育馆丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text>地坛公园</text>
+            </view>
+             <view class="current_li current_move">
+                <text>三元桥三元桥三元桥</text>
+            </view>
+            <view class="current_li">
+                <text>北京八大处</text>
+            </view>
+            <view class="current_li ">
+                <text>丰台体育馆</text>
+            </view>
+            <view class="current_li">
+                <text class="move_btn">更多</text>
+            </view>
+        </view>
+        <!--list end-->
+    </view>
+    <!--行政区域 end-->
+</view>
+<!--main end-->

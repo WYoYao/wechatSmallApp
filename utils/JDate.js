@@ -95,6 +95,18 @@ function JDate(props=Date.now()){
     date.getMillisecond=function(){
         return +this;
     }
+    /**
+     * 设置小时
+     */
+    date.setHour=function(hour){
+        return new JDate(date.setHours(hour));
+    }
+    /**
+     * 设置分钟
+     */
+    date.setMinute=function(minute){
+        return new JDate(date.setHours(minute));
+    }
 
     return date;
 

@@ -133,7 +133,8 @@
                             </view>
                         </view>
                         <view class="content_right" catchtap="DetailToOrder" data-item="{{info.string}}">
-                            <view class="content_btn">订</view>
+                            <view wx:if="{{info.CurrentAlloment==-1}}" class="content_btn">订</view>
+                            <view wx:if="{{info.CurrentAlloment==0}}" class="content_btn">满</view>
                             <!--<input type="button" id="" value="订" class="content_btn" />-->
                         </view>
                     </view>
