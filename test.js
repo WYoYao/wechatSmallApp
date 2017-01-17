@@ -1,16 +1,10 @@
 
 
 
+let Member={"IsSuccess":true,"ExceptionMessage":null,"Json":{"BaseResponse":{"IsSuccess":true,"ErrorMessage":null,"ErrorCode":null},"CustMng":{"CustomerMemo":null,"CustomerID":20611619,"CustomerAvatar":"http://images.jsjinfo.cn:8080/Share+","CustomerName":"潇潇","CustomerEngName":null,"CustomerBirthday":"0001/1/1 0:00:00","CustomerSex":"1","CustomerQRCode":"F9GgzK99KhtObCUuiKsEZdnSUy1C8aryI7qGeJv0AOuiy9tJ2BaDtQBqfEqukogk","GuaranteeNo":"PICC2014014932","InactiveCardID":null,"IsBigCustomer":0,"IsCanReNew":false,"CreateTime":"2016/3/22 10:16:20","CustomerClass":"普通","City":"   "},"ContactmeansList":[{"ContactMeansTypeID":1,"ContactMeansypeName":"手机","ContactMeansNum":"18410705929","ContactMeansDefualt":true},{"ContactMeansTypeID":3,"ContactMeansypeName":"电子邮件","ContactMeansNum":null,"ContactMeansDefualt":false}],"CertificateList":[{"CertificateTypeID":1,"CertificateTypeName":"身份证","CertificateTypeNum":"372926198908103355","CertificateTypeDefualt":true}],"CardList":[{"CardID":"81000111930948","CardTypeDescribe":"698","CardURL":"http://h.jsj.com.cn/m/GoldCardImg/898.png","CardOpenTime":"2014/3/26 14:26:19","CardInvalidTime":"2027/9/2 4:26:19","CardRenewTime":null,"IsCanRenew":true,"IsExpire":false,"CardTypeID":6040,"CardTypeName":"金色世纪-商旅管家·金卡（升级版）"},{"CardID":"20050026688","CardTypeDescribe":"非会员","CardURL":null,"CardOpenTime":"2016/3/22 10:16:21","CardInvalidTime":null,"CardRenewTime":null,"IsCanRenew":false,"IsExpire":true,"CardTypeID":1067,"CardTypeName":"JSJ预备卡"}],"VoucherList":[{"VoucherID":787984,"VoucherStartTime":"2015/3/26 14:26:20","VoucherEndTime":"2017/3/26 14:26:20","VoucherLockMoney":-40.0,"VoucherLastMoney":3800.0,"HotelVoucherDenomination":20.0,"HotelTotalVoucher":0.0}]}};
+
 
 let _GetRoomPrice = { "IsSuccess": true, "ExceptionMessage": null, "Json": { "BaseResponse": { "Code": 1, "Message": "查询成功" }, "ListRoomPrice": [{ "MemberPrice": 560.0, "SellDate": "2017-01-16", "RoomInvStatus": -1, "CurrencyID": 1, "ForPeople": 1, "Commission": 39.2, "Cashback": 16.0, "CashbackTow": 16.0, "ExchangeRate": 1.0 }, { "MemberPrice": 560.0, "SellDate": "2017-01-17", "RoomInvStatus": -1, "CurrencyID": 1, "ForPeople": 1, "Commission": 39.2, "Cashback": 16.0, "CashbackTow": 16.0, "ExchangeRate": 1.0 }, { "MemberPrice": 560.0, "SellDate": "2017-01-18", "RoomInvStatus": -1, "CurrencyID": 1, "ForPeople": 1, "Commission": 39.2, "Cashback": 16.0, "CashbackTow": 16.0, "ExchangeRate": 1.0 }, { "MemberPrice": 560.0, "SellDate": "2017-01-19", "RoomInvStatus": -1, "CurrencyID": 1, "ForPeople": 1, "Commission": 39.2, "Cashback": 16.0, "CashbackTow": 16.0, "ExchangeRate": 1.0 }], "FullCutRoomNote": null, "FullCutRoomAmount": 0.0 } };
 
 
-let _GetOrderGuranteeInfoNew = { "IsSuccess": true, "ExceptionMessage": null, "Json": { "BaseResponse": { "Code": 1, "Message": "查询成功" }, "IsGuarantee": false, "ListOrderGuranteeInfo": null } };
-
-
-
-console.log(Object.assign({
-    name:"leo",
-},{
-    name:"Tom"
-}))
+let _GetOrderGuranteeInfoNew = {"IsSuccess":true,"ExceptionMessage":null,"Json":{"BaseResponse":{"Code":1,"Message":"查询成功"},"IsGuarantee":false,"ListOrderGuranteeInfo":null}};
