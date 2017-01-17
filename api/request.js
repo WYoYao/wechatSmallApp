@@ -11,7 +11,7 @@ class Jrequest {
 
         return Object.assign(this, { SignatureKey, url ,BaseRequest});
     }
-    get(MethodName, Json, cb) {
+    get(MethodName, Json={}, cb) {
 
         if (get_type(MethodName) != "String") throw new Error("MethodName must be a String");
 
@@ -20,11 +20,6 @@ class Jrequest {
         if (!cb || get_type(cb) != "Function") throw new Error("cb must be a Function");
 
         Json=Object.assign(Json,{BaseRequest:this.BaseRequest});
-
-        //配置请求基类
-        // Json.BaseRequest = {
-        //         SourceWay: 50
-        // }
 
         //时间戳
         let Timestamp = Date.now();

@@ -24,7 +24,7 @@ function JDate(props=Date.now()){
         }
     }
 
-        /**
+     /**
      * 日期类型转换字符串
      * 格式yyyy-MM-dd hh:mm:ss
      */

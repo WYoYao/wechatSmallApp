@@ -1,0 +1,22 @@
+/* pages/viphall/index.wxss */
+
+/*定位顶部*/
+.flight_list_con{ width:100%; height:40px;line-height:40px;text-indent:15px; background:#fff;top:44px;left:0;z-index:100;}
+.clear { clear:both;}
+
+/*flight_list*/
+.flight_list {width:95%;float:right;}
+.h2 { height:44px; line-height:44px;border-bottom:1px solid #dedede;font-size:15px;color:#666;font-weight:bold;}
+.flight_list_dl{margin-top:10px;border-bottom:5px solid #eee;padding-bottom:10px; overflow:hidden;line-height:1;}
+.dt{float:left;}
+.dd{float:left;}
+.vipimage{width:95px;height:85px;border:0;vertical-align:middle;}
+.h3{font-size:15px;color:#666;font-weight:bold;}
+.list_dl_p{font-size:12px;color:#999;padding-top:5px;}
+.list_dl_p_span{float:left;}
+.list_dl_ul{padding:8px 0;}
+.list_dl_ul_li{float:left;}
+.vipicoimg{width:13px;height:13px;border:0;}
+.list_dl_price{display:block;font-size:15px;color:#FFB759;padding-top:5px;}
+.list_dl_price_em{font-style:normal;font-weight:400;font-size:12px;}
+.viewdiv{margin: 0;padding: 0;line-height: 1;}

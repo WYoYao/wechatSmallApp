@@ -51,12 +51,14 @@
                 <text>入住人</text>
             </view>
             <view class="section_right">
-                <view class="section_right_con">
-                    <input type="text" name="" placeholder="一个房间填一个入住人" value="" class="telinput" />
-                </view>
-                <view class="section_right_con">
-                    <input type="text" name="" placeholder="请输入国籍" value="" class="telinput" />
-                </view>
+                <block wx:for="{{userList}}" wx:key="{{index}}">
+                    <view class="section_right_con">
+                        <input type="text" name="" placeholder="一个房间填一个入住人" value="{{item.GuestNames}}" data-key="{{index}}" bindinput="bindInputGuestNames" class="telinput" />
+                    </view>
+                    <view class="section_right_con">
+                        <input type="text" name="" placeholder="请输入国籍" value="{{item.Nationalitys}}" data-key="{{index}}" bindinput="bindInputNationalitys" class="telinput" />
+                    </view>
+                </block>
             </view>
         </view>
         <view class="section_p clear">
@@ -65,7 +67,7 @@
             </view>
             <view class="section_right">
                 <view class="section_right_con">
-                    <input type="text" name="" placeholder="联系人手机号" value="" class="telinput" />
+                    <input type="text" name="" placeholder="联系人手机号" bindinput="bindInputTel" value="{{state.Contact.ContactMobile}}" class="telinput" />
                 </view>
             </view>
         </view>
@@ -122,7 +124,7 @@
         </view>
     </view>
     <view class="footer_right">
-        <input type="button" id="" value="提交订单" class="footer_btn" />
+        <input type="button" id="" value="提交订单" bindtap="bingCommitOrder" class="footer_btn" />
     </view>
 </view>
 <!--footer end-->
